@@ -1,0 +1,203 @@
+{
+    "metadata": {
+        "title": "Home Page",
+        "description": "Welcome to our home page"
+    },
+    "common": {
+        "companyName": "Company"
+    },
+    "hero": {
+        "title": "We transform ideas into digital solutions!",
+        "subtitle": "Development of websites, systems, and apps that boost businesses and optimize results.",
+        "primaryCtaText": "Request your quote now",
+        "secondaryCtaText": "Learn about our services",
+        "noSupporthtml": "Your browser does not support HTML5 videos."
+    },
+    "benefits": {
+        "title": "Why choose AxisByte?",
+        "subtitle": "Understand why our approach is ideal for the growth and success of your business.",
+        "items": [
+            {
+                "icon": "FaRegThumbsUp",
+                "title": "Tailored Solution",
+                "description": "We develop customized systems for your business, meeting your specific needs."
+            },
+            {
+                "icon": "FaRegLightbulb",
+                "title": "Constant Innovation",
+                "description": "We stay updated with the latest trends and technologies, bringing innovation to your software."
+            },
+            {
+                "icon": "FaShieldAlt",
+                "title": "Guaranteed Security",
+                "description": "We implement best security practices to protect your business and customer data."
+            },
+            {
+                "icon": "FaCog",
+                "title": "Continuous Support",
+                "description": "We provide continuous technical support to ensure your system operates perfectly over time."
+            }
+        ]
+    },
+    "successCases": {
+        "title": "",
+        "items": [
+            {
+                "image": "/images/success-cases/empresa-x.jpg",
+                "title": "Digital Transformation of Company X",
+                "description": "Company X implemented our solution and saw a 30% increase in productivity with process automation.",
+                "link": "/casos-de-sucesso/empresa-x"
+            },
+            {
+                "image": "/images/success-cases/startup-y.jpg",
+                "title": "Process Optimization at Startup Y",
+                "description": "With our platform, Startup Y reduced customer response time by 50%.",
+                "link": "/casos-de-sucesso/startup-y"
+            },
+            {
+                "image": "/images/success-cases/tech-solutions.jpg",
+                "title": "Efficiency Boost at Tech Solutions",
+                "description": "Tech Solutions improved team collaboration with our project management tool, resulting in a 20% increase in efficiency.",
+                "link": "/casos-de-sucesso/tech-solutions"
+            }
+        ],
+        "knowMore": "Learn more"
+    },
+    "howItWorks": {
+        "title": "How does it work?",
+        "description": "See how our approach will help transform your business in 4 simple and effective steps.",
+        "steps": [
+            {
+                "icon": "FaRegHandshake",
+                "title": "1. Understanding the Project",
+                "description": "We meet with your team to understand the needs and challenges of your business."
+            },
+            {
+                "icon": "FaCode",
+                "title": "2. Custom Development",
+                "description": "We develop the software tailored to your expectations and objectives."
+            },
+            {
+                "icon": "FaRocket",
+                "title": "3. Implementation and Launch",
+                "description": "We test and implement the solution, ensuring everything works perfectly."
+            },
+            {
+                "icon": "FaCheckCircle",
+                "title": "4. Continuous Support",
+                "description": "After launch, we provide continuous support to ensure constant evolution."
+            }
+        ]
+    },
+    "servicesHighlights": {
+        "title": "Highlights of Our Services",
+        "services": [
+            {
+                "title": "Responsive Website Development",
+                "description": "We create modern, fast, and optimized websites for any device, with a focus on user experience and performance.",
+                "image": "/images/web-development.jpeg"
+            },
+            {
+                "title": "Mobile App Creation (Flutter)",
+                "description": "We develop high-performance mobile apps with Flutter, ensuring a consistent experience on both Android and iOS.",
+                "image": "/images/mobile-development.jpg"
+            },
+            {
+                "title": "Tailored Solutions (Systems and APIs)",
+                "description": "We build custom solutions, from complete systems to APIs, to meet your business’s specific needs.",
+                "image": "/images/custom-solutions.jpg"
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "What our clients say",
+        "items": [
+            {
+                "name": "João Silva",
+                "company": "Company X",
+                "text": "AxisByte transformed our sales management process. The software is intuitive and efficient.",
+                "image": "/images/testimonials/carlos.png"
+            },
+            {
+                "name": "Maria Oliveira",
+                "company": "Startup Y",
+                "text": "Working with AxisByte was an incredible experience. They truly understand the client's needs.",
+                "image": "/images/testimonials/carlos.png"
+            },
+            {
+                "name": "Carlos Pereira",
+                "company": "Tech Solutions",
+                "text": "With AxisByte’s software, we were able to optimize our internal processes and improve productivity.",
+                "image": "/images/testimonials/carlos.png"
+            }
+        ]
+    },
+    "aboutUs": {
+        "title": "About Us",
+        "description": "Axisbyte Forge Co. is a company specializing in creating intelligent and scalable digital solutions. We develop custom websites, apps, and systems, always focusing on performance, agility, and innovation. Our goal is to transform technology into time, allowing our clients to grow with more freedom.",
+        "image": "/team.png"
+    },
+    "partnersCarousel": {
+        "title": "Our Partners",
+        "partners": [
+            {
+                "name": "Company A",
+                "logo": "/images/empresa-a.png"
+            },
+            {
+                "name": "Company B",
+                "logo": "/images/empresa-b.png"
+            },
+            {
+                "name": "Company C",
+                "logo": "/images/empresa-c.png"
+            },
+            {
+                "name": "Company D",
+                "logo": "/images/empresa-d.png"
+            }
+        ]
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "faqs": [
+            {
+                "question": "What is Axisbyte?",
+                "answer": "Axisbyte is a personalized training platform that helps gyms and users track their progress and create workouts tailored to their needs."
+            },
+            {
+                "question": "How can I sign up for the beta?",
+                "answer": "You can sign up for the beta by visiting our registration page and filling out the form with your details."
+            },
+            {
+                "question": "What is included in the Early Access plan?",
+                "answer": "The Early Access plan provides early access to all platform features, including workout customization, progress reports, and much more."
+            },
+            {
+                "question": "What sets Axisbyte apart from other platforms?",
+                "answer": "Axisbyte offers a complete set of tools for both gyms and individual users, with exclusive features like detailed reports and integration with workout tracking devices."
+            }
+        ]
+    },
+    "footer": {
+        "builtBy": "Feito por Axisbyte",
+        "builtByLink": "https://www.axisbyte.com",
+        "socialLinks": [
+            {
+                "name": "Twitter",
+                "href": "https://twitter.com/axisbyte",
+                "icon": "TwitterLogoIcon"
+            },
+            {
+                "name": "LinkedIn",
+                "href": "https://linkedin.com/company/axisbyte",
+                "icon": "LinkedInLogoIcon"
+            },
+            {
+                "name": "Instagram",
+                "href": "https://instagram.com/axisbyte",
+                "icon": "InstagramLogoIcon"
+            }
+        ]
+    }
+}

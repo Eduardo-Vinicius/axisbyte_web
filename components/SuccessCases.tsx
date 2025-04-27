@@ -5,42 +5,23 @@ import { useKeenSlider } from 'keen-slider/react';
 import { useEffect } from 'react';
 import { useTheme } from 'next-themes';
 
-type SuccessCase = {
+type SuccessCases = {
     title: string;
-    description: string;
-    image: string;
-    link: string;
+    items: {
+        image: string;
+        title: string;
+        description: string;
+        link: string;
+    }[];
+    knowMore: string;
 };
 
 type SuccessCasesCarouselProps = {
     intervalTime?: number; // Novo parâmetro para o intervalo do carrossel
+    dictionary: SuccessCases; // Passando o dicionário como parâmetro
 };
 
-const successCases: SuccessCase[] = [
-    {
-        title: 'Transformação Digital da Empresa X',
-        description:
-            'A Empresa X implementou nossa solução e teve um aumento de 30% na produtividade com a automação de processos.',
-        image: '/images/success-cases/empresa-x.jpg',
-        link: '/casos-de-sucesso/empresa-x',
-    },
-    {
-        title: 'Otimização de Processos na Startup Y',
-        description:
-            'Com a nossa plataforma, a Startup Y conseguiu reduzir o tempo de resposta ao cliente em 50%.',
-        image: '/images/success-cases/startup-y.jpg',
-        link: '/casos-de-sucesso/startup-y',
-    },
-    {
-        title: 'Aumento de Eficiência na Tech Solutions',
-        description:
-            'A Tech Solutions melhorou a colaboração entre equipes com a nossa ferramenta de gestão de projetos, resultando em um aumento de 20% na eficiência.',
-        image: '/images/success-cases/tech-solutions.jpg',
-        link: '/casos-de-sucesso/tech-solutions',
-    },
-];
-
-export default function SuccessCasesCarousel({ intervalTime = 3000 }: SuccessCasesCarouselProps) {
+export default function SuccessCasesCarousel({ intervalTime, dictionary }: SuccessCasesCarouselProps) {
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
         loop: true,
         slides: {
@@ -76,10 +57,10 @@ export default function SuccessCasesCarousel({ intervalTime = 3000 }: SuccessCas
         <section className={`py-12 ${theme === 'dark' ? 'text-white' : 'bg-white text-gray-900'}`}>
             <div className="max-w-7xl mx-auto px-4">
                 <h2 className={`text-3xl font-bold text-center mb-8 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-                    Casos de Sucesso
+                    {dictionary.title}
                 </h2>
                 <div ref={sliderRef} className="keen-slider">
-                    {successCases.map((successCase, index) => (
+                    {dictionary.items.map((successCase, index) => (
                         <div
                             key={index}
                             className={`keen-slider__slide flex justify-center items-center p-6 ${theme === 'dark' ? 'bg-gray-700' : 'bg-white'} rounded-lg shadow-lg`}
@@ -100,7 +81,7 @@ export default function SuccessCasesCarousel({ intervalTime = 3000 }: SuccessCas
                                     href={successCase.link}
                                     className={`text-indigo-600 hover:text-indigo-800 font-semibold ${theme === 'dark' ? 'text-indigo-400' : ''}`}
                                 >
-                                    Saiba mais
+                                    {dictionary.knowMore}
                                 </a>
                             </div>
                         </div>

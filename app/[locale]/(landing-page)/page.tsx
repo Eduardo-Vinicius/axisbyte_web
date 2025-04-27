@@ -7,48 +7,51 @@ import HowItWorks from '@/components/HowItWorks';
 import SuccessCasesCarousel from "@/components/SuccessCases";
 import AboutUs from "@/components/AboutUs";
 import ServicesHighlights from "@/components/ServicesHighlights";
+import type { Locale } from "@/i18n/config"
+import { getDictionary } from "@/i18n/dictionaries"
 
-export default async function IndexPage() {
+export default async function IndexPage({
+  params,
+}: {
+  params: { locale: Locale }
+}) {
+  // Ensure locale is defined with a fallback
+  const locale = params?.locale || "pt"
+  const dict = await getDictionary(locale)
+
   return (
     <div className="overflow-y-visible">
       <Hero
-        title="Transformamos ideias em soluções digitais!"
-        subtitle="Desenvolvimento de sites, sistemas e aplicativos que aceleram negócios e otimizam resultados."
-        primaryCtaText="Peça seu orçamento agora"
         primaryCtaLink="https://forms.gle/6DT6awF1XbrdDjxRA"
-        secondaryCtaText="Conheça nossos serviços"
         secondaryCtaLink="/#conheca"
-        credits={
-          <>
-          </>
-        }
         mediaType="image"
         mediaSrc="/Kanban.png"
+        dictionary={dict.hero}
       />
 
       <div id="Benefits"/>
-      <Benefits />
+      <Benefits dictionary={dict.benefits}/>
       
       <div id="SuccessCasesCarousel"/>
-      <SuccessCasesCarousel intervalTime={5000} />
+      <SuccessCasesCarousel intervalTime={5000} dictionary={dict.successCases}/>
 
       <div id="HowItWorks"/>
-      <HowItWorks />
+      <HowItWorks dictionary={dict.howItWorks}/>
 
       <div id="ServicesHighlights"/>
-      <ServicesHighlights />
+      <ServicesHighlights dictionary={dict.servicesHighlights}/>
 
       <div id="Testimonials"/>
-      <Testimonials intervalTime={5000}/>
+      <Testimonials intervalTime={5000} dictionary={dict.testimonials}/>
 
       <div id="AboutUs"/>
-      <AboutUs />
+      <AboutUs dictionary={dict.aboutUs}/>
 
       <div id="Partners"/>
-      <PartnersCarousel intervalTime={5000}/>
+      <PartnersCarousel intervalTime={5000} dictionary={dict.partnersCarousel}/>
 
       <div id="faq" />
-      <FAQ />
+      <FAQ dictionary={dict.faq}/>
     </div>
   );
 }

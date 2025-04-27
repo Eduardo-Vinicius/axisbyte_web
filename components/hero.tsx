@@ -6,15 +6,17 @@ import Link from "next/link";
 import { useTheme } from 'next-themes';
 
 export function Hero(props: {
-  title: string;
-  subtitle: string;
-  credits?: React.ReactNode;
-  primaryCtaText: string;
   primaryCtaLink: string;
-  secondaryCtaText: string;
   secondaryCtaLink: string;
   mediaType: "video" | "image"; // novo parâmetro
   mediaSrc: string;             // novo parâmetro
+  dictionary: {
+    title: string
+    subtitle: string
+    primaryCtaText: string
+    secondaryCtaText: string
+    noSupporthtml: string
+  }
 }) {
   const { theme } = useTheme(); // Obtém o tema atual (claro ou escuro)
 
@@ -24,17 +26,17 @@ export function Hero(props: {
         {/* Texto e Botões */}
         <div className={`flex max-w-[64rem] flex-col items-center text-center space-y-6 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
           <h1 className="font-heading text-2xl sm:text-4xl lg:text-5xl">
-            {props.title}
+            {props.dictionary.title}
           </h1>
           <p className={`max-w-[42rem] leading-normal ${theme === 'dark' ? 'text-gray-300' : 'text-muted-foreground'} sm:text-xl sm:leading-8`}>
-            {props.subtitle}
+            {props.dictionary.subtitle}
           </p>
           <div className="flex gap-4 flex-wrap justify-center lg:justify-start">
             <Link
               href={props.primaryCtaLink}
               className={cn(buttonVariants({ size: "lg" }))}
             >
-              {props.primaryCtaText}
+              {props.dictionary.primaryCtaText}
             </Link>
 
             <Link
@@ -43,13 +45,9 @@ export function Hero(props: {
               rel="noreferrer"
               className={cn(buttonVariants({ variant: "outline", size: "lg" }), "text-foreground")}
             >
-              {props.secondaryCtaText}
+              {props.dictionary.secondaryCtaText}
             </Link>
           </div>
-
-          {props.credits && (
-            <p className="text-sm text-muted-foreground mt-4">{props.credits}</p>
-          )}
         </div>
 
         {/* Mídia Dinâmica */}
@@ -60,7 +58,7 @@ export function Hero(props: {
               controls
               className={`rounded-2xl shadow-lg ${theme === 'dark' ? 'border-2 border-gray-800' : ''}`}
             >
-              Seu navegador não suporta vídeos HTML5.
+              {props.dictionary.noSupporthtml}
             </video>
           ) : (
             <img

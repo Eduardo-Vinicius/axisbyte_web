@@ -1,9 +1,14 @@
-"use client"
-
 import { Footer } from "@/components/footer";
 import { LandingPageHeader } from "@/components/landing-page-header";
+import React from "react";
 
-export default function Layout(props) {
+// Função para obter o locale
+export default async function Layout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+
   return (
     <div className="flex min-h-screen flex-col overflow-visible">
       <LandingPageHeader
@@ -19,7 +24,7 @@ export default function Layout(props) {
           { title: "FAQ", href: "/#faq" },
         ]}
       />
-      <main className="flex-1 overflow-visible">{props.children}</main>
+      <main className="flex-1 overflow-visible">{children}</main>
       <Footer
         builtBy="Axisbyte Forge Co"
         builtByLink="https://github.com/Axisbyte/"

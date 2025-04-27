@@ -36,7 +36,7 @@
     "app/dashboard/page.jsx",
     "app/[locale]/(landing-page)/(auth)/login/page.tsx",
     "app/[locale]/(landing-page)/(auth)/signup/page.tsx",
-    "app/[locale]/(landing-page)/layout.jsx"
+    "app/[locale]/(landing-page)/layout.tsx"
 , "utils/transformers.js", "app/[locale]/(authenticated)/dashboard/workout/library/template-list.tsx"  ],
   "exclude": [
     "node_modules"

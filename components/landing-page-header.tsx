@@ -11,6 +11,9 @@ import { ColorModeSwitcher } from "./color-mode-switcher";
 import { Logo } from "./logo";
 import { Button, buttonVariants } from "./ui/button";
 import { cn } from "@/lib/utils";
+import LanguageSwitcher from "./language-switcher";
+import { getDictionary } from "@/i18n/dictionaries";
+import { useParams } from 'next/navigation';
 
 interface NavProps {
   items?: {
@@ -113,7 +116,9 @@ function DesktopItems(props: NavProps) {
 
 export function LandingPageHeader(props: NavProps) {
   const [showMobileMenu, setShowMobileMenu] = useState<boolean>(false);
-
+  const params = useParams();
+  const locale = params?.locale || "pt"
+  
   return (
     <header className="fixed w-full z-50 bg-background/80 px-4 md:px-8 backdrop-blur">
       <div className="flex h-18 items-center justify-between py-4">
@@ -140,6 +145,7 @@ export function LandingPageHeader(props: NavProps) {
         </div>
 
         <div className="flex gap-4 items-center">
+          <LanguageSwitcher locale={locale}/>
           <ColorModeSwitcher />
           <nav className="gap-4 items-center hidden md:flex">
             <AuthButtons />

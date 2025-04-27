@@ -1,0 +1,203 @@
+{
+    "metadata": {
+        "title": "Página Inicial",
+        "description": "Bem-vindo à nossa página inicial"
+    },
+    "common": {
+        "companyName": "Empresa"
+    },
+    "hero": {
+        "title": "Transformamos ideias em soluções digitais!",
+        "subtitle": "Desenvolvimento de sites, sistemas e aplicativos que aceleram negócios e otimizam resultados.",
+        "primaryCtaText": "Peça seu orçamento agora",
+        "secondaryCtaText": "Conheça nossos serviços",
+        "noSupporthtml": "Seu navegador não suporta vídeos HTML5."
+    },
+    "benefits": {
+        "title": "Por que escolher a AxisByte?",
+        "subtitle": "Entenda por que nossa abordagem é a ideal para o crescimento e sucesso do seu negócio.",
+        "items": [
+            {
+                "icon": "FaRegThumbsUp",
+                "title": "Solução sob medida",
+                "description": "Desenvolvemos sistemas personalizados para o seu negócio, atendendo às suas necessidades específicas."
+            },
+            {
+                "icon": "FaRegLightbulb",
+                "title": "Inovação constante",
+                "description": "Estamos sempre atualizados com as últimas tendências e tecnologias, trazendo inovação ao seu software."
+            },
+            {
+                "icon": "FaShieldAlt",
+                "title": "Segurança garantida",
+                "description": "Implementamos as melhores práticas de segurança para proteger os dados do seu negócio e de seus clientes."
+            },
+            {
+                "icon": "FaCog",
+                "title": "Suporte contínuo",
+                "description": "Oferecemos suporte técnico contínuo para garantir o funcionamento perfeito do seu sistema ao longo do tempo."
+            }
+        ]
+    },
+    "successCases": {
+        "title": "",
+        "items": [
+            {
+                "image": "/images/success-cases/empresa-x.jpg",
+                "title": "Transformação Digital da Empresa X",
+                "description": "A Empresa X implementou nossa solução e teve um aumento de 30% na produtividade com a automação de processos.",
+                "link": "/casos-de-sucesso/empresa-x"
+            },
+            {
+                "image": "/images/success-cases/startup-y.jpg",
+                "title": "Otimização de Processos na Startup Y",
+                "description": "Com a nossa plataforma, a Startup Y conseguiu reduzir o tempo de resposta ao cliente em 50%.",
+                "link": "/casos-de-sucesso/startup-y"
+            },
+            {
+                "image": "/images/success-cases/tech-solutions.jpg",
+                "title": "Aumento de Eficiência na Tech Solutions",
+                "description": "A Tech Solutions melhorou a colaboração entre equipes com a nossa ferramenta de gestão de projetos, resultando em um aumento de 20% na eficiência.",
+                "link": "/casos-de-sucesso/tech-solutions"
+            }
+        ],
+        "knowMore": "Saiba mais"
+    },
+    "howItWorks": {
+        "title": "Como Funciona?",
+        "description": "Veja como nossa abordagem ajudará a transformar o seu negócio em 4 etapas simples e eficazes.",
+        "steps": [
+            {
+                "icon": "FaRegHandshake",
+                "title": "1. Entendimento do Projeto",
+                "description": "Nos reunimos com sua equipe para entender as necessidades e desafios do seu negócio."
+            },
+            {
+                "icon": "FaCode",
+                "title": "2. Desenvolvimento Personalizado",
+                "description": "Desenvolvemos o software sob medida, alinhado às suas expectativas e objetivos."
+            },
+            {
+                "icon": "FaRocket",
+                "title": "3. Implementação e Lançamento",
+                "description": "Testamos e implementamos a solução, garantindo que tudo funcione perfeitamente."
+            },
+            {
+                "icon": "FaCheckCircle",
+                "title": "4. Suporte Contínuo",
+                "description": "Após o lançamento, oferecemos suporte contínuo para garantir a evolução constante."
+            }
+        ]
+    },
+    "servicesHighlights": {
+        "title": "Destaques dos Nossos Serviços",
+        "services": [
+            {
+                "title": "Desenvolvimento de Sites Responsivos",
+                "description": "Criamos sites modernos, rápidos e otimizados para qualquer dispositivo, com foco em experiência do usuário e performance.",
+                "image": "/images/web-development.jpeg"
+            },
+            {
+                "title": "Criação de Aplicativos Mobile (Flutter)",
+                "description": "Desenvolvemos apps móveis de alta performance com Flutter, garantindo uma experiência consistente em Android e iOS.",
+                "image": "/images/mobile-development.jpg"
+            },
+            {
+                "title": "Soluções sob Medida (Sistemas e APIs)",
+                "description": "Construímos soluções personalizadas, desde sistemas completos até APIs, para atender necessidades específicas do seu negócio.",
+                "image": "/images/custom-solutions.jpg"
+            }
+        ]
+    },
+    "aboutUs": {
+        "title": "Quem Somos",
+        "description": "Axisbyte Forge Co. é uma empresa especializada na criação de soluções digitais inteligentes e escaláveis. Desenvolvemos sites, aplicativos e sistemas personalizados, sempre focados em performance, agilidade e inovação. Nosso objetivo é transformar tecnologia em tempo para nossos clientes crescerem com mais liberdade.",
+        "image": "/team.png"
+    },
+    "testimonials": {
+        "title": "O que nossos clientes dizem",
+        "items": [
+            {
+                "name": "João Silva",
+                "company": "Empresa X",
+                "text": "A AxisByte transformou o nosso processo de gestão de vendas. O software é intuitivo e eficiente.",
+                "image": "/images/testimonials/carlos.png"
+            },
+            {
+                "name": "Maria Oliveira",
+                "company": "Startup Y",
+                "text": "Trabalhar com a AxisByte foi uma experiência incrível. Eles realmente entendem as necessidades do cliente.",
+                "image": "/images/testimonials/carlos.png"
+            },
+            {
+                "name": "Carlos Pereira",
+                "company": "Tech Solutions",
+                "text": "Com o software da AxisByte, conseguimos otimizar nossos processos internos e melhorar a produtividade.",
+                "image": "/images/testimonials/carlos.png"
+            }
+        ]
+    },
+    "partnersCarousel": {
+        "title": "Nossos Parceiros",
+        "partners": [
+            {
+                "name": "Empresa A",
+                "logo": "/images/empresa-a.png"
+            },
+            {
+                "name": "Empresa B",
+                "logo": "/images/empresa-b.png"
+            },
+            {
+                "name": "Empresa C",
+                "logo": "/images/empresa-c.png"
+            },
+            {
+                "name": "Empresa D",
+                "logo": "/images/empresa-d.png"
+            }
+        ]
+    },
+    "faq": {
+        "title": "Perguntas Frequentes",
+        "faqs": [
+            {
+                "question": "O que é o Axisbyte?",
+                "answer": "Axisbyte é uma plataforma de treinamento personalizada que ajuda academias e usuários a monitorarem seu progresso e criarem treinos adaptados às suas necessidades."
+            },
+            {
+                "question": "Como posso me inscrever no beta?",
+                "answer": "Você pode se inscrever no beta acessando nossa página de inscrição e preenchendo o formulário com seus dados."
+            },
+            {
+                "question": "O que está incluído no plano Early Access?",
+                "answer": "O plano Early Access oferece acesso antecipado a todas as funcionalidades da plataforma, incluindo personalização de treinos, relatórios de progresso e muito mais."
+            },
+            {
+                "question": "O que diferencia o Axisbyte das outras plataformas?",
+                "answer": "O Axisbyte oferece um conjunto completo de ferramentas para academias e usuários individuais, com recursos exclusivos como relatórios detalhados e integração com dispositivos de monitoramento de treino."
+            }
+        ]
+    },
+    "footer": {
+        "builtBy": "Feito por Axisbyte",
+        "builtByLink": "https://www.axisbyte.com",
+        "socialLinks": [
+            {
+                "name": "Twitter",
+                "href": "https://twitter.com/axisbyte",
+                "icon": "TwitterLogoIcon"
+            },
+            {
+                "name": "LinkedIn",
+                "href": "https://linkedin.com/company/axisbyte",
+                "icon": "LinkedInLogoIcon"
+            },
+            {
+                "name": "Instagram",
+                "href": "https://instagram.com/axisbyte",
+                "icon": "InstagramLogoIcon"
+            }
+        ]
+    }
+}

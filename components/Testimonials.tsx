@@ -14,30 +14,13 @@ type Testimonial = {
 
 type TestimonialsCarouselProps = {
   intervalTime?: number; // Novo parâmetro para o intervalo do carrossel
+  dictionary: {
+    title: string;
+    items: Testimonial[];
+  };
 };
 
-const testimonials: Testimonial[] = [
-  {
-    name: 'João Silva',
-    company: 'Empresa X',
-    text: 'A AxisByte transformou o nosso processo de gestão de vendas. O software é intuitivo e eficiente.',
-    image: '/images/testimonials/carlos.png',
-  },
-  {
-    name: 'Maria Oliveira',
-    company: 'Startup Y',
-    text: 'Trabalhar com a AxisByte foi uma experiência incrível. Eles realmente entendem as necessidades do cliente.',
-    image: '/images/testimonials/carlos.png',
-  },
-  {
-    name: 'Carlos Pereira',
-    company: 'Tech Solutions',
-    text: 'Com o software da AxisByte, conseguimos otimizar nossos processos internos e melhorar a produtividade.',
-    image: '/images/testimonials/carlos.png',
-  },
-];
-
-export default function TestimonialsCarousel({ intervalTime = 3000 }: TestimonialsCarouselProps) {
+export default function TestimonialsCarousel({ intervalTime = 3000, dictionary }: TestimonialsCarouselProps) {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
     slides: {
@@ -73,10 +56,10 @@ export default function TestimonialsCarousel({ intervalTime = 3000 }: Testimonia
     <section className={`py-12 ${theme === 'dark' ? 'text-white' : 'bg-white text-gray-900'}`}>
       <div className="max-w-7xl mx-auto px-4">
         <h2 className={`text-3xl font-bold text-center mb-8 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
-          O que nossos clientes dizem
+          {dictionary.title}
         </h2>
         <div ref={sliderRef} className="keen-slider">
-          {testimonials.map((testimonial, index) => (
+          {dictionary.items.map((testimonial, index) => (
             <div
               key={index}
               className={`keen-slider__slide flex justify-center items-center p-6 ${theme === 'dark' ? 'bg-gray-700' : 'bg-white'} rounded-lg shadow-lg`}

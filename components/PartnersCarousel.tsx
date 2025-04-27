@@ -6,17 +6,14 @@ import { useEffect } from 'react';
 import { useTheme } from 'next-themes';
 
 type PartnersCarouselProps = {
+    dictionary: {
+        title: string;
+        partners: { name: string; logo: string }[];
+    };
     intervalTime?: number; // novo parâmetro
 };
 
-const partners = [
-    { name: 'Empresa A', logo: '/images/empresa-a.png' },
-    { name: 'Empresa B', logo: '/images/empresa-b.png' },
-    { name: 'Empresa C', logo: '/images/empresa-c.png' },
-    { name: 'Empresa D', logo: '/images/empresa-d.png' },
-];
-
-export default function PartnersCarousel({ intervalTime = 3000 }: PartnersCarouselProps) {
+export default function PartnersCarousel({ dictionary, intervalTime = 3000 }: PartnersCarouselProps) {
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
         loop: true,
         slides: {
@@ -51,9 +48,9 @@ export default function PartnersCarousel({ intervalTime = 3000 }: PartnersCarous
     return (
         <section className={`py-12 ${theme === 'dark' ? 'text-white' : 'bg-white text-gray-900'}`}>
             <div className="max-w-7xl mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center mb-8">Nossos Parceiros</h2>
+                <h2 className="text-3xl font-bold text-center mb-8">{dictionary.title}</h2>
                 <div ref={sliderRef} className="keen-slider">
-                    {partners.map((partner, index) => (
+                    {dictionary.partners.map((partner, index) => (
                         <div
                             key={index}
                             className={`keen-slider__slide flex justify-center items-center ${theme === 'dark' ? 'bg-gray-700' : 'bg-gray-100'} p-4 rounded-lg`}
