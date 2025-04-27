@@ -41,8 +41,15 @@ export default function TestimonialsCarousel({ intervalTime = 3000 }: Testimonia
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
     slides: {
-      perView: 3,
+      perView: 3,  // Exibe 3 itens por vez por padrão
       spacing: 16,
+    },
+    breakpoints: {
+      '(max-width: 768px)': { // Para telas pequenas
+        slides: {
+          perView: 1, // Exibe 1 item por vez em telas pequenas
+        },
+      },
     },
   });
 
