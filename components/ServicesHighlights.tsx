@@ -9,7 +9,7 @@ export default function ServicesHighlights() {
     {
       title: 'Desenvolvimento de Sites Responsivos',
       description: 'Criamos sites modernos, rápidos e otimizados para qualquer dispositivo, com foco em experiência do usuário e performance.',
-      image: '/images/web-development.jpg',
+      image: '/images/web-development.jpeg',
     },
     {
       title: 'Criação de Aplicativos Mobile (Flutter)',

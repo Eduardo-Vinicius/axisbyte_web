@@ -21,19 +21,19 @@ const testimonials: Testimonial[] = [
     name: 'João Silva',
     company: 'Empresa X',
     text: 'A AxisByte transformou o nosso processo de gestão de vendas. O software é intuitivo e eficiente.',
-    image: '/images/testimonials/joao.jpg',
+    image: '/images/testimonials/carlos.png',
   },
   {
     name: 'Maria Oliveira',
     company: 'Startup Y',
     text: 'Trabalhar com a AxisByte foi uma experiência incrível. Eles realmente entendem as necessidades do cliente.',
-    image: '/images/testimonials/maria.jpg',
+    image: '/images/testimonials/carlos.png',
   },
   {
     name: 'Carlos Pereira',
     company: 'Tech Solutions',
     text: 'Com o software da AxisByte, conseguimos otimizar nossos processos internos e melhorar a produtividade.',
-    image: '/images/testimonials/carlos.jpg',
+    image: '/images/testimonials/carlos.png',
   },
 ];
 

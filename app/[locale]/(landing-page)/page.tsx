@@ -23,7 +23,7 @@ export default async function IndexPage() {
           </>
         }
         mediaType="image"
-        mediaSrc="Kanban.png"
+        mediaSrc="/Kanban.png"
       />
 
       <div id="Benefits"/>

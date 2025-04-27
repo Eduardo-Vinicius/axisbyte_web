@@ -10,9 +10,7 @@ export default function OverflowHandler({
 }) {
   const pathname = usePathname();
   // Define a classe de overflow dinamicamente
-  const bodyClass = cn(
-    pathname === "/" ? "overflow-y-auto" : "overflow-y-hidden"
-  );
 
-  return <body className={bodyClass}>{children}</body>;
+
+  return <body className="overflow-y-auto">{children}</body>;
 }

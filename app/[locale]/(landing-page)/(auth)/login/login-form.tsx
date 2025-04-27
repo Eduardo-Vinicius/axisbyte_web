@@ -11,7 +11,7 @@ import { Alert, AlertDescription } from "@/components/ui/alert"
 import { AlertCircle } from 'lucide-react'
 import { auth } from "@/lib/firebase"
 import api from "@/lib/api/axios-instance"
-import { setAuthCookies } from "../../../actions/auth"
+import { setAuthCookies } from "../../../../actions/auth"
 import type { LoginResponse } from "@/types/auth"
 
 export default function LoginForm() {

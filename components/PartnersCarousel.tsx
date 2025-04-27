@@ -10,10 +10,10 @@ type PartnersCarouselProps = {
 };
 
 const partners = [
-    { name: 'Empresa A', logo: '/logos/empresa-a.png' },
-    { name: 'Empresa B', logo: '/logos/empresa-b.png' },
-    { name: 'Empresa C', logo: '/logos/empresa-c.png' },
-    { name: 'Empresa D', logo: '/logos/empresa-d.png' },
+    { name: 'Empresa A', logo: '/images/empresa-a.png' },
+    { name: 'Empresa B', logo: '/images/empresa-b.png' },
+    { name: 'Empresa C', logo: '/images/empresa-c.png' },
+    { name: 'Empresa D', logo: '/images/empresa-d.png' },
 ];
 
 export default function PartnersCarousel({ intervalTime = 3000 }: PartnersCarouselProps) {
@@ -61,7 +61,7 @@ export default function PartnersCarousel({ intervalTime = 3000 }: PartnersCarous
                             <img
                                 src={partner.logo}
                                 alt={partner.name}
-                                className="h-16 w-auto object-contain"
+                                className="h-50 w-auto object-contain"
                             />
                         </div>
                     ))}

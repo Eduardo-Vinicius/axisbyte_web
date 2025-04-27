@@ -41,7 +41,7 @@ export function Hero(props: {
               href={props.secondaryCtaLink}
               target="_blank"
               rel="noreferrer"
-              className={cn(buttonVariants({ variant: "outline", size: "lg" }), ` ${theme === 'dark' ? 'text-white' : 'text-black'}`)}
+              className={cn(buttonVariants({ variant: "outline", size: "lg" }), "text-foreground")}
             >
               {props.secondaryCtaText}
             </Link>
