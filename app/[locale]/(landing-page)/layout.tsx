@@ -1,5 +1,9 @@
+"use client";
+
 import { Footer } from "@/components/footer";
 import { LandingPageHeader } from "@/components/landing-page-header";
+import { getDictionary } from "@/i18n/dictionaries";
+import { useParams } from "next/navigation";
 import React from "react";
 
 // Função para obter o locale
@@ -8,6 +12,9 @@ export default async function Layout({
 }: {
   children: React.ReactNode;
 }) {
+  const params = useParams();
+  const locale = params?.locale || "pt"
+  const dict = getDictionary(locale as "pt" | "us")
 
   return (
     <div className="flex min-h-screen flex-col overflow-visible">

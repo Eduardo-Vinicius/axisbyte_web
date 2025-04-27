@@ -145,7 +145,7 @@ export function LandingPageHeader(props: NavProps) {
         </div>
 
         <div className="flex gap-4 items-center">
-          <LanguageSwitcher locale={locale}/>
+          <LanguageSwitcher locale={locale as "pt" | "us"}/>
           <ColorModeSwitcher />
           <nav className="gap-4 items-center hidden md:flex">
             <AuthButtons />
