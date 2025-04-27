@@ -19,17 +19,7 @@ export default async function Layout({
   return (
     <div className="flex min-h-screen flex-col overflow-visible">
       <LandingPageHeader
-        items={[
-          { title: "Home", href: "/" },
-          { title: "Benefícios", href: "/#Benefits" },
-          { title: "Casos de sucesso", href: "/#SuccessCasesCarousel" },
-          { title: "Como Funciona?", href: "/#HowItWorks" },
-          { title: "Serviços", href: "/#ServicesHighlights" },
-          { title: "Depoimentos", href: "/#Testimonials" },
-          { title: "Parceiros", href: "/#Partners" },
-          { title: "Sobre nós", href: "/#AboutUs" },
-          { title: "FAQ", href: "/#faq" },
-        ]}
+        items={[]}
       />
       <main className="flex-1 overflow-visible">{children}</main>
       <Footer
