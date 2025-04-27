@@ -13,10 +13,10 @@ import { getDictionary } from "@/i18n/dictionaries"
 export default async function IndexPage({
   params,
 }: {
-  params: { locale: Locale }
+  params: any
 }) {
   // Ensure locale is defined with a fallback
-  const locale = params?.locale || "pt"
+  const locale = await params?.locale || "pt"
   const dict = await getDictionary(locale)
 
   return (
