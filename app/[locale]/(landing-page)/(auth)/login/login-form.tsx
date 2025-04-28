@@ -10,11 +10,11 @@ import { Label } from "@/components/ui/label"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { AlertCircle } from 'lucide-react'
 import { auth } from "@/lib/firebase"
-import api from "@/lib/api/axios-instance"
 import { setAuthCookies } from "../../../../actions/auth"
-import type { LoginResponse } from "@/types/auth"
+import { useParams } from 'next/navigation';
 
 export default function LoginForm() {
+  const param = useParams();
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
   const router = useRouter()
@@ -29,24 +29,19 @@ export default function LoginForm() {
     const password = formData.get("password") as string
 
     try {
-      // Login no Firebase
-      const userCredential = await signInWithEmailAndPassword(auth, email, password)
-      const idToken = await userCredential.user.getIdToken()
-
-      // Chamada para a API
-      console.log(api);
-      
-      const response = await api.post<LoginResponse>('/api/v1/login', { idToken })
-      const { access_token, refreshtoken, is_signup_finished, plan } = response.data
-
-      console.log(response.data);
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const uid = userCredential.user.uid;
 
       // Salva os cookies no servidor
-      await setAuthCookies(access_token, refreshtoken, is_signup_finished, plan)
+      await setAuthCookies(uid)
 
       router.refresh()
 
-      router.push("/dashboard")
+      console.log('====================================');
+      console.log(param.locale);
+      console.log('====================================');
+
+      router.push(`/${param.locale}/dashboard`)
       
     } catch (error) {
       console.error('Erro ao realizar login:', error)

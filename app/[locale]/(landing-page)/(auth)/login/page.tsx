@@ -1,7 +1,7 @@
 import LoginForm from "./login-form"
 import Image from "next/image"
 
-export default function LoginPage() {
+export default async function LoginPage() {
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
       {/* Coluna do Formulário */}
@@ -13,7 +13,7 @@ export default function LoginPage() {
               Entre com sua conta para continuar
             </p>
           </div>
-          <LoginForm />
+          <LoginForm/>
         </div>
       </div>
     </div>

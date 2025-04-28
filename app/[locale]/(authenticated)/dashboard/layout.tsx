@@ -16,9 +16,6 @@ async function DashboardLayout({
     <div className="flex h-screen">
       {/* Sidebar */}
       <div className="hidden w-70 flex-shrink-0 flex-col md:flex border-r">
-        <div className="flex h-16 items-center justify-center border-b px-4">
-
-        </div>
         <Sidebar navigation={navigation} />
       </div>
       {/* Main Content */}

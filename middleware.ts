@@ -3,24 +3,26 @@ import { i18n } from "./i18n/config";
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  const authToken = request.cookies.get('authToken');
+  const uid = request.cookies.get('uid');
 
   // Verifica se o usuário está tentando acessar o dashboard
   if (pathname.startsWith('/dashboard')) {
-    if (!authToken) {
+    if (!uid) {
       return NextResponse.redirect(new URL('/login', request.url));
     }
   }
 
   // Se tentar acessar /login já estando autenticado, redireciona para o dashboard
-  if (pathname === '/login' && authToken) {
+  if (pathname === '/login' && uid) {
     return NextResponse.redirect(new URL('/dashboard', request.url));
   }
 
   // Internacionalização: Verifica se o pathname já contém locale
-  const pathnameHasLocale = i18n.locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  );
+  const pathnameHasLocale = i18n.locales.some((locale) => {
+    const regex = new RegExp(`^/${locale}(/|$)`);
+    return regex.test(pathname);
+  });
+  
 
   if (pathnameHasLocale) {
     return NextResponse.next();

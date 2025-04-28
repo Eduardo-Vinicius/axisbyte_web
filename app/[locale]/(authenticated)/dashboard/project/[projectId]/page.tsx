@@ -1,17 +1,19 @@
-// app/dashboard/project/[projectID].tsx
-"use client";
+"use client"
 
-import React from 'react';
-import { useParams } from 'next/navigation';  // Use useParams para acessar parâmetros dinâmicos
+import KanbanBoard from "@/components/kanban-board"
+import { getDictionary } from "@/i18n/dictionaries"
+import { useParams } from "next/navigation";
 
-const ProjectDetailPage = () => {
-  const { projectID } = useParams();  // Obtendo o ID do projeto da URL
+
+export default async function Home() {
+  const params = useParams();
+  const locale = params?.locale || "pt"
+  const dict = await getDictionary(locale as "pt" | "us")
 
   return (
-    <div>
-      <h1>Pagina kanban</h1>
-    </div>
-  );
-};
-
-export default ProjectDetailPage;
+    <main className="container mx-auto py-10 px-4">
+      <h1 className="text-3xl font-bold mb-8 text-center">{dict.kanban.title}</h1>
+      <KanbanBoard locale={locale as "pt" | "us"}/>
+    </main>
+  )
+}

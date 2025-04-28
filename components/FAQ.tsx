@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTheme } from 'next-themes';
 
 type FAQProps = {
@@ -12,11 +12,20 @@ type FAQProps = {
 
 const FAQ: React.FC<FAQProps> = ({ dictionary }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const { theme } = useTheme(); // Obtém o tema atual (claro ou escuro)
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const toggleAnswer = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
+
+  if (!mounted) {
+    return null; // ou você pode retornar um pequeno loading, se preferir
+  }
 
   return (
     <section className={`py-16 md:py-24 lg:py-32 ${theme === 'dark' ? 'text-white' : 'bg-white'}`}>

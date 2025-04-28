@@ -1,10 +1,11 @@
 'use client';
 
 import { ReactNode } from 'react';
-import { useRouter } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import { ColorModeSwitcher } from '@/components/color-mode-switcher';
 import { signOut } from 'firebase/auth';
 import { auth } from '@/lib/firebase';
+import LanguageSwitcher from '@/components/language-switcher';
 
 export default function AuthenticatedLayout({
     children,
@@ -33,6 +34,9 @@ export default function AuthenticatedLayout({
         }
     };
 
+    const params = useParams();
+    const locale = params?.locale || "pt"
+
     return (
         <div className="min-h-screen bg-background">
             <header className="p-4 flex justify-between items-center border-b">
@@ -41,6 +45,7 @@ export default function AuthenticatedLayout({
                     <h1 className="text-xl font-bold">Axisbyte</h1>
                 </div>
                 <div className="flex items-center space-x-4">
+                    <LanguageSwitcher locale={locale as "pt" | "us"}/>
                     <ColorModeSwitcher />
                     <button onClick={handleLogout} className="text-sm">Logout</button>
                 </div>

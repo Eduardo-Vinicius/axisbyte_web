@@ -199,5 +199,32 @@
                 "icon": "InstagramLogoIcon"
             }
         ]
+    },
+    "kanban": {
+        "title": "Kanban",
+        "progress": "Progresso",
+        "columns": {
+            "todo": "A Fazer",
+            "inProgress": "Em Progresso",
+            "done": "Concluído"
+        },
+        "sampleCards": {
+            "task1": {
+                "title": "Criar Estrutura do Projeto",
+                "description": "Configurar o repositório e preparar a arquitetura inicial."
+            },
+            "task2": {
+                "title": "Implementar Tela de Login",
+                "description": "Desenvolver a interface e a autenticação de usuários."
+            },
+            "task3": {
+                "title": "Conectar à API",
+                "description": "Realizar integração inicial com a API backend."
+            },
+            "task4": {
+                "title": "Finalizar Layout Responsivo",
+                "description": "Ajustar o layout para funcionar em diferentes tamanhos de tela."
+            }
+        }
     }
 }

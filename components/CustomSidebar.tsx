@@ -59,13 +59,6 @@ const sectionLabels: Record<string, string> = {
 
 export default function Sidebar({ navigation, initialBranch }: any) {
     const [expandedSection, setExpandedSection] = useState<string | null>("overview");
-    const [branchId, setBranchId] = useState<string | null>(initialBranch?.id || null); // state for storing branchId
-
-    useEffect(() => {
-        if (initialBranch?.id) {
-            setBranchId(initialBranch.id); // set the branchId when initialBranch is available
-        }
-    }, [initialBranch]); // dependency on initialBranch to update branchId when it's loaded
 
     const toggleSection = (section: string) => {
         setExpandedSection((prev) => (prev === section ? null : section));
