@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -8,17 +9,26 @@ import { useTheme } from 'next-themes';
 export function Hero(props: {
   primaryCtaLink: string;
   secondaryCtaLink: string;
-  mediaType: "video" | "image"; // novo parâmetro
-  mediaSrc: string;             // novo parâmetro
+  mediaType: "video" | "image";
+  mediaSrc: string;
   dictionary: {
-    title: string
-    subtitle: string
-    primaryCtaText: string
-    secondaryCtaText: string
-    noSupporthtml: string
-  }
+    title: string;
+    subtitle: string;
+    primaryCtaText: string;
+    secondaryCtaText: string;
+    noSupporthtml: string;
+  };
 }) {
-  const { theme } = useTheme(); // Obtém o tema atual (claro ou escuro)
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <section className={`py-32 md:py-48 lg:py-52 ${theme === 'dark' ? 'text-white' : 'bg-white'}`}>

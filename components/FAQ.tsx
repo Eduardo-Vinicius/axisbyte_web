@@ -24,29 +24,33 @@ const FAQ: React.FC<FAQProps> = ({ dictionary }) => {
   };
 
   if (!mounted) {
-    return null; // ou você pode retornar um pequeno loading, se preferir
+    return (
+      <section className="py-16 md:py-24 lg:py-32 bg-white">
+        {/* Você pode colocar um spinner ou loading aqui */}
+      </section>
+    );
   }
 
   return (
-    <section className={`py-16 md:py-24 lg:py-32 ${theme === 'dark' ? 'text-white' : 'bg-white'}`}>
+    <section className={`py-16 md:py-24 lg:py-32 ${theme === 'dark' ? 'bg-background text-white' : 'bg-white text-foreground'}`}>
       <div className="container mx-auto px-6 text-center">
-        <h2 className={`font-heading text-3xl sm:text-4xl lg:text-5xl ${theme === 'dark' ? 'text-white' : 'text-card-foreground'}`}>
+        <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl">
           {dictionary.title}
         </h2>
         <div className="mt-8 max-w-3xl mx-auto space-y-6">
           {dictionary.faqs.map((faq, index) => (
             <div
               key={index}
-              className={`border-b ${theme === 'dark' ? 'border-gray-700' : 'border-muted-foreground'} pb-6`}
+              className="border-b border-border pb-6"
             >
               <button
                 onClick={() => toggleAnswer(index)}
-                className={`w-full text-left text-lg font-semibold ${theme === 'dark' ? 'text-white hover:text-primary' : 'text-card-foreground hover:text-primary'} transition-all`}
+                className="w-full text-left text-lg font-semibold transition-all hover:text-primary"
               >
                 {faq.question}
               </button>
               {activeIndex === index && (
-                <p className={`${theme === 'dark' ? 'text-gray-300' : 'text-muted-foreground'} mt-2`}>
+                <p className="mt-2 text-muted-foreground">
                   {faq.answer}
                 </p>
               )}

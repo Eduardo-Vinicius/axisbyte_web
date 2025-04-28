@@ -1,6 +1,7 @@
 'use client';
 
 import { useTheme } from 'next-themes';
+import { useState, useEffect } from 'react';
 
 type Service = {
   title: string;
@@ -17,6 +18,15 @@ type ServicesHighlightsProps = {
 
 export default function ServicesHighlights({ dictionary }: ServicesHighlightsProps) {
   const { theme } = useTheme(); // Obtendo o tema atual (claro ou escuro)
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <section className="py-12">

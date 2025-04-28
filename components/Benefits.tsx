@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { FaRegThumbsUp, FaRegLightbulb, FaShieldAlt, FaCog } from 'react-icons/fa';
 import { useTheme } from 'next-themes';
 
@@ -24,6 +25,15 @@ interface BenefitsProps {
 
 export default function Benefits({ dictionary }: BenefitsProps) {
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <section className={`py-12 ${theme === 'dark' ? 'text-white' : 'bg-white'}`}>
@@ -38,7 +48,9 @@ export default function Benefits({ dictionary }: BenefitsProps) {
           {dictionary.items.map((item, index) => (
             <div
               key={index}
-              className={`p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'}`}
+              className={`p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ${
+                theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'
+              }`}
             >
               <div className="mb-4">
                 {iconMap[item.icon as keyof typeof iconMap] || <div />}

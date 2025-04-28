@@ -1,6 +1,7 @@
 'use client';
 
 import { useTheme } from 'next-themes';
+import { useState, useEffect } from 'react';
 import { FaRegHandshake, FaCode, FaRocket, FaCheckCircle } from 'react-icons/fa';
 
 type Step = {
@@ -30,6 +31,15 @@ const iconMap: { [key: string]: JSX.Element } = {
 
 export default function HowItWorks({ dictionary }: HowItWorksProps) {
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <section className={`py-12 ${theme === 'dark' ? 'text-white' : 'bg-white text-gray-900'}`}>

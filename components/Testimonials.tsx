@@ -2,7 +2,7 @@
 
 import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 
 type Testimonial = {
@@ -24,19 +24,24 @@ export default function TestimonialsCarousel({ intervalTime = 3000, dictionary }
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
     slides: {
-      perView: 3,  // Exibe 3 itens por vez por padrão
+      perView: 3,
       spacing: 16,
     },
     breakpoints: {
-      '(max-width: 768px)': { // Para telas pequenas
+      '(max-width: 768px)': {
         slides: {
-          perView: 1, // Exibe 1 item por vez em telas pequenas
+          perView: 1,
         },
       },
     },
   });
 
-  const { theme } = useTheme(); // Obtendo o tema atual (claro ou escuro)
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     let interval: number | undefined;
@@ -51,6 +56,10 @@ export default function TestimonialsCarousel({ intervalTime = 3000, dictionary }
       }
     };
   }, [instanceRef, intervalTime]);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <section className={`py-12 ${theme === 'dark' ? 'text-white' : 'bg-white text-gray-900'}`}>

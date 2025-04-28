@@ -1,6 +1,7 @@
 'use client';
 
 import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 type AboutUsProps = {
   dictionary: {
@@ -11,7 +12,16 @@ type AboutUsProps = {
 };
 
 export default function AboutUs({ dictionary }: AboutUsProps) {
-  const { theme } = useTheme(); // Obtém o tema atual (claro ou escuro)
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <section className={`py-12 ${theme === 'dark' ? 'text-white' : 'bg-white text-gray-900'}`}>

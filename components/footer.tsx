@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { buttonVariants } from "@/components/ui/button";
 import {
   GitHubLogoIcon,
@@ -17,7 +18,16 @@ export function Footer(props: {
   twitterLink: string;
   linkedinLink: string;
 }) {
-  const { theme } = useTheme(); // Obtém o tema atual (claro ou escuro)
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <footer className={`border-t ${theme === 'dark' ? 'text-gray-300' : 'bg-white'}`}>
