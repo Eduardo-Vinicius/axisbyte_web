@@ -45,7 +45,7 @@ export default function SignUpForm() {
       // Simula uma chamada de API
       var response = await signupAPI(request);
 
-      setAuthCookies(response.access_token, response.refreshtoken);
+      setAuthCookies(response.access_token);
 
       // Aqui você adicionaria sua lógica de criação de conta
       router.push("/login")
