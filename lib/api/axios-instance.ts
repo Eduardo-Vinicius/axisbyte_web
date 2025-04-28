@@ -11,7 +11,6 @@ const api = axios.create({
 api.interceptors.request.use(async (config: InternalAxiosRequestConfig) => {
     const cookie = await getAuthCookies()
     if (cookie) {
-        config.headers.Authorization = `Bearer ${cookie.authToken?.value}`;
         console.log(config.headers.Authorization);
     }
 
