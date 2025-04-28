@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { AlertCircle } from 'lucide-react'
 import { setAuthCookies } from "@/app/actions/auth"
-import { signupAPI } from "@/actions/auth"
+// import { signupAPI } from "@/actions/auth"
 import { SignupData } from "@/types/auth"
 
 export default function SignUpForm() {
@@ -43,9 +43,9 @@ export default function SignUpForm() {
       }
 
       // Simula uma chamada de API
-      var response = await signupAPI(request);
+      // var response = await signupAPI(request);
 
-      setAuthCookies(response.access_token);
+      // setAuthCookies(response.access_token);
 
       // Aqui você adicionaria sua lógica de criação de conta
       router.push("/login")
