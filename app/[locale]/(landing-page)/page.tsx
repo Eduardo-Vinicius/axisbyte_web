@@ -47,8 +47,8 @@ export default async function IndexPage({
       <div id="AboutUs"/>
       <AboutUs dictionary={dict.aboutUs}/>
 
-      <div id="Partners"/>
-      <PartnersCarousel intervalTime={5000} dictionary={dict.partnersCarousel}/>
+      {/* <div id="Partners"/>
+      <PartnersCarousel intervalTime={5000} dictionary={dict.partnersCarousel}/> */}
 
       <div id="faq" />
       <FAQ dictionary={dict.faq}/>
