@@ -32,14 +32,14 @@ export default async function IndexPage({
       <div id="Benefits"/>
       <Benefits dictionary={dict.benefits}/>
       
-      <div id="SuccessCasesCarousel"/>
-      <SuccessCasesCarousel intervalTime={5000} dictionary={dict.successCases}/>
+      <div id="ServicesHighlights"/>
+      <ServicesHighlights dictionary={dict.servicesHighlights}/>
 
       <div id="HowItWorks"/>
       <HowItWorks dictionary={dict.howItWorks}/>
 
-      <div id="ServicesHighlights"/>
-      <ServicesHighlights dictionary={dict.servicesHighlights}/>
+      <div id="SuccessCasesCarousel"/>
+      <SuccessCasesCarousel intervalTime={5000} dictionary={dict.successCases}/>
 
       <div id="Testimonials"/>
       <Testimonials intervalTime={5000} dictionary={dict.testimonials}/>
