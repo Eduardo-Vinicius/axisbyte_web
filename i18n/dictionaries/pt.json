@@ -15,7 +15,7 @@
     },
     "benefits": {
         "title": "Por que escolher a AxisByte?",
-        "subtitle": "Entenda por que nossa abordagem é a ideal para o crescimento e sucesso do seu negócio.",
+        "subtitle": "Veja como nossa abordagem ajudará a transformar o seu negócio em 4 etapas simples e eficazes.",
         "items": [
             {
                 "icon": "FaRegThumbsUp",
@@ -55,6 +55,12 @@
             "link": "https://ficael.com"
             },
             {
+                "image": "/images/success-cases/psicologo.png",
+                "title": "Psicologo Marcelo Martins",
+                "description": "A Tech Solutions melhorou a colaboração entre equipes com a nossa ferramenta de gestão de projetos, resultando em um aumento de 20% na eficiência.",
+                "link": "https://www.psicologomarcelomartins.com.br"
+            },
+            {
             "image": "/images/success-cases/psicologo.png",
             "title": "Psicólogo Marcelo Martins",
             "description": "Criação de site completo e personalizado para o psicólogo Marcelo Martins, com foco em agendamento, apresentação de serviços e fortalecimento da autoridade profissional.",
@@ -64,7 +70,7 @@
         "knowMore": "Visitar site"
     },
     "howItWorks": {
-        "title": "Por que escolher a Axisbyte?",
+        "title": "Como Funciona?",
         "description": "Veja como nossa abordagem ajudará a transformar o seu negócio em 4 etapas simples e eficazes.",
         "steps": [
             {
