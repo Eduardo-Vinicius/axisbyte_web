@@ -29,8 +29,8 @@ export default async function IndexPage({
         dictionary={dict.hero}
       />
 
-      <div id="Benefits"/>
-      <Benefits dictionary={dict.benefits}/>
+      {/* <div id="Benefits"/> */}
+      {/* <Benefits dictionary={dict.benefits}/> */}
 
       <div id="HowItWorks"/>
       <HowItWorks dictionary={dict.howItWorks}/>

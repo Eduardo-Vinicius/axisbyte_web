@@ -25,7 +25,7 @@ export default async function Layout({
       <Footer
         builtBy="Axisbyte Forge Co"
         builtByLink="https://github.com/Axisbyte/"
-        instagramLink="https://github.com/Axisbyte/"
+        instagramLink="https://www.instagram.com/axisbyte.co/"
       />
     </div>
   );

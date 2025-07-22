@@ -8,7 +8,7 @@
     },
     "hero": {
         "title": "Transformamos tecnologia em tempo!",
-        "subtitle": "Criação de Apps, sites e automações sob medida.",
+        "subtitle": "Soluções digitais sob medida: desenvolvemos sites, apps e sistemas inteligentes com agilidade e precisão.",
         "primaryCtaText": "Peça seu orçamento agora",
         "secondaryCtaText": "Conheça nossos serviços",
         "noSupporthtml": "Seu navegador não suporta vídeos HTML5."
@@ -43,28 +43,28 @@
         "title": "Cases de sucesso",
         "items": [
             {
-                "image": "/images/success-cases/rxperformance.jpg",
-                "title": "RW Performance",
-                "description": "A Empresa X implementou nossa solução e teve um aumento de 30% na produtividade com a automação de processos.",
-                "link": "https://www.rwperformance.com.br"
+            "image": "/images/success-cases/rxperformance.jpg",
+            "title": "RW Performance",
+            "description": "Desenvolvimento de site institucional moderno e otimizado para a RW Performance, com foco em performance, responsividade e presença digital profissional.",
+            "link": "https://www.rwperformance.com.br"
             },
             {
-                "image": "/images/success-cases/Ficael.jpg",
-                "title": "Ficael",
-                "description": "Com a nossa plataforma, a Startup Y conseguiu reduzir o tempo de resposta ao cliente em 50%.",
-                "link": "https://ficael.com"
+            "image": "/images/success-cases/Ficael.jpg",
+            "title": "Ficael",
+            "description": "Construção da landing page oficial da Ficael, com design leve, comunicação estratégica e foco na geração de leads para o lançamento da startup.",
+            "link": "https://ficael.com"
             },
             {
-                "image": "/images/success-cases/psicologo.png",
-                "title": "Psicologo Marcelo Martins",
-                "description": "A Tech Solutions melhorou a colaboração entre equipes com a nossa ferramenta de gestão de projetos, resultando em um aumento de 20% na eficiência.",
-                "link": "https://www.psicologomarcelomartins.com.br"
+            "image": "/images/success-cases/psicologo.png",
+            "title": "Psicólogo Marcelo Martins",
+            "description": "Criação de site completo e personalizado para o psicólogo Marcelo Martins, com foco em agendamento, apresentação de serviços e fortalecimento da autoridade profissional.",
+            "link": "https://www.psicologomarcelomartins.com.br"
             }
         ],
         "knowMore": "Visitar site"
     },
     "howItWorks": {
-        "title": "Como Funciona?",
+        "title": "Por que escolher a Axisbyte?",
         "description": "Veja como nossa abordagem ajudará a transformar o seu negócio em 4 etapas simples e eficazes.",
         "steps": [
             {
@@ -90,7 +90,7 @@
         ]
     },
     "servicesHighlights": {
-        "title": "Destaques dos Nossos Serviços",
+        "title": "Nossos Serviços",
         "services": [
             {
                 "title": "Sites rápidos e responsivos",

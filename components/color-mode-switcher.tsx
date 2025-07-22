@@ -18,14 +18,14 @@ export function ColorModeSwitcher() {
         <Moon />
       </Button>
       
-      <Button
+      {/* <Button
         variant="ghost"
         size="icon"
         onClick={() => setTheme("light")}
         className="hidden dark:flex"
       >
         <Sun />
-      </Button>
+      </Button> */}
     </>
   );
 }
