@@ -28,9 +28,8 @@ export default async function IndexPage({
         mediaSrc="/axislogo.png"
         dictionary={dict.hero}
       />
-
-      <div id="Benefits"/>
-      <Benefits dictionary={dict.benefits}/>
+      {/*<div id="Benefits"/>
+      <Benefits dictionary={dict.benefits}/> */}
 
       <div id="HowItWorks"/>
       <HowItWorks dictionary={dict.howItWorks}/>

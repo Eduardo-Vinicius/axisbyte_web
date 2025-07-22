@@ -8,14 +8,14 @@
     },
     "hero": {
         "title": "Transformamos tecnologia em tempo!",
-        "subtitle": "Criação de Apps, sites e automações sob medida.",
+        "subtitle": "Soluções digitais sob medida: desenvolvemos sites, apps e sistemas inteligentes com agilidade e precisão.",
         "primaryCtaText": "Peça seu orçamento agora",
         "secondaryCtaText": "Conheça nossos serviços",
         "noSupporthtml": "Seu navegador não suporta vídeos HTML5."
     },
     "benefits": {
         "title": "Por que escolher a AxisByte?",
-        "subtitle": "Entenda por que nossa abordagem é a ideal para o crescimento e sucesso do seu negócio.",
+        "subtitle": "Veja como nossa abordagem ajudará a transformar o seu negócio em 4 etapas simples e eficazes.",
         "items": [
             {
                 "icon": "FaRegThumbsUp",
@@ -59,12 +59,18 @@
                 "title": "Psicologo Marcelo Martins",
                 "description": "A Tech Solutions melhorou a colaboração entre equipes com a nossa ferramenta de gestão de projetos, resultando em um aumento de 20% na eficiência.",
                 "link": "https://www.psicologomarcelomartins.com.br"
+            },
+            {
+                "image": "/images/success-cases/psicologo.png",
+                "title": "Psicologo Marcelo Martins",
+                "description": "A Tech Solutions melhorou a colaboração entre equipes com a nossa ferramenta de gestão de projetos, resultando em um aumento de 20% na eficiência.",
+                "link": "https://www.psicologomarcelomartins.com.br"
             }
         ],
         "knowMore": "Visitar site"
     },
     "howItWorks": {
-        "title": "Como Funciona?",
+        "title": "Por que escolher a AxisByte?",
         "description": "Veja como nossa abordagem ajudará a transformar o seu negócio em 4 etapas simples e eficazes.",
         "steps": [
             {
