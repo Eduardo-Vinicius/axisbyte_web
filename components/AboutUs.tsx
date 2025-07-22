@@ -8,6 +8,7 @@ type AboutUsProps = {
     title: string;
     description: string;
     image: string;
+    imageLight: string;
   };
 };
 
@@ -23,6 +24,8 @@ export default function AboutUs({ dictionary }: AboutUsProps) {
     return null;
   }
 
+  const imageToShow = theme === 'dark' ? dictionary.image : dictionary.imageLight || dictionary.image;
+
   return (
     <section className={`py-12 ${theme === 'dark' ? 'text-white' : 'bg-white text-gray-900'}`}>
       <div className="max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between">
@@ -37,13 +40,14 @@ export default function AboutUs({ dictionary }: AboutUsProps) {
         </div>
 
         {/* Foto */}
-        <div className="md:w-1/2 mt-8 md:mt-0">
+        <div className="md:w-2/5 mt-8 md:mt-0">
           <img
-            src={dictionary.image}
+            src={imageToShow}
             alt="Equipe Axisbyte"
             className="w-full h-auto rounded-lg shadow-lg object-cover"
           />
         </div>
+
       </div>
     </section>
   );

@@ -26,6 +26,7 @@ export default async function IndexPage({
         secondaryCtaLink="https://www.instagram.com/p/DKiSko3SaRv/?img_index=1"
         mediaType="image"
         mediaSrc="/axislogo.png"
+        mediaSrcLight="/axislogoLight.png"
         dictionary={dict.hero}
       />
 

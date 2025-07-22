@@ -135,7 +135,8 @@
     "aboutUs": {
         "title": "About Us",
         "description": "Axisbyte Forge Co. is a company specializing in creating intelligent and scalable digital solutions. We develop custom websites, apps, and systems, always focusing on performance, agility, and innovation. Our goal is to transform technology into time, allowing our clients to grow with more freedom.",
-        "image": "/axislogo.png"
+        "image": "/axislogo.png",
+        "imageLight": "/axislogoLight.png"
     },
     "partnersCarousel": {
         "title": "Our Partners",

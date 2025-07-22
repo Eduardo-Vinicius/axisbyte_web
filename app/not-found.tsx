@@ -9,11 +9,6 @@ export default function NotFound() {
       <LandingPageHeader
         items={[
           { title: "Home", href: "/" },
-          { title: "Benefícios para Academias", href: "/#benefits" },
-          { title: "Plano Early Access", href: "/#early-access" },
-          { title: "Funcionalidades", href: "/#features" },
-          { title: "Beta Testers", href: "/#beta-testers" },
-          { title: "FAQ", href: "/#faq" },
         ]}
       />
 

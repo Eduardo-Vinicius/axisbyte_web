@@ -11,6 +11,7 @@ export function Hero(props: {
   secondaryCtaLink: string;
   mediaType: "video" | "image";
   mediaSrc: string;
+  mediaSrcLight: string;
   dictionary: {
     title: string;
     subtitle: string;
@@ -66,15 +67,15 @@ export function Hero(props: {
             <video
               src={props.mediaSrc}
               controls
-              className={`rounded-2xl shadow-lg ${theme === 'dark' ? ' border-gray-800' : ''}`}
+              className={`rounded-2xl shadow-lg ${theme === 'dark' ? 'border border-gray-800' : ''}`}
             >
               {props.dictionary.noSupporthtml}
             </video>
           ) : (
             <img
-              src={props.mediaSrc}
+              src={theme === 'dark' ? props.mediaSrc : props.mediaSrcLight || props.mediaSrc}
               alt="Demonstração da criação de projetos Axisbyte"
-              className={`rounded-2xl shadow-lg ${theme === 'dark' ? ' border-gray-800' : ''}`}
+              className={`rounded-2xl shadow-lg ${theme === 'dark' ? 'border border-gray-800' : ''}`}
             />
           )}
         </div>
