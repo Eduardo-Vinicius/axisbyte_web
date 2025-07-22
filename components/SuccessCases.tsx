@@ -79,14 +79,13 @@ export default function SuccessCasesCarousel({ intervalTime = 5000, dictionary }
   const isDark = theme === "dark"
 
   return (
-    <section className={`py-20 overflow-hidden ${isDark ? "bg-black text-white" : "bg-white text-gray-900"}`}>
+    <section className={`py-24 overflow-hidden ${isDark ? "bg-zinc-900 text-white" : "bg-white text-gray-900"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-extrabold text-center mb-12 tracking-tight">
+        <h2 className="text-4xl font-extrabold text-center mb-14 tracking-tight">
           {dictionary.title}
         </h2>
 
         <div className="relative">
-          {/* Carousel */}
           <div ref={sliderRef} className="keen-slider overflow-visible">
             {dictionary.items.map((successCase, index) => (
               <div key={index} className="keen-slider__slide">
@@ -99,7 +98,7 @@ export default function SuccessCasesCarousel({ intervalTime = 5000, dictionary }
                 >
                   <div
                     className={`flex flex-col h-full justify-between rounded-2xl shadow-xl border ${
-                      isDark ? "bg-zinc-900 border-zinc-800" : "bg-white border-zinc-200"
+                      isDark ? "bg-black border-zinc-800" : "bg-white border-gray-200"
                     } hover:scale-[1.01] transition-transform duration-300`}
                     style={{ minHeight: 420 }}
                   >
@@ -110,7 +109,7 @@ export default function SuccessCasesCarousel({ intervalTime = 5000, dictionary }
                     />
                     <div className="flex flex-col justify-between p-6 flex-grow space-y-4">
                       <h3 className="text-2xl font-semibold">{successCase.title}</h3>
-                      <p className="text-base leading-relaxed text-gray-400 dark:text-gray-300 flex-grow">
+                      <p className="text-base leading-relaxed text-gray-500 dark:text-gray-300 flex-grow">
                         {successCase.description}
                       </p>
                       <a
@@ -136,7 +135,7 @@ export default function SuccessCasesCarousel({ intervalTime = 5000, dictionary }
               <button
                 onClick={() => instanceRef.current?.prev()}
                 className={`absolute -left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center ${
-                  isDark ? "bg-zinc-800 text-white" : "bg-white text-gray-900"
+                  isDark ? "bg-black text-white" : "bg-white text-gray-900"
                 } shadow-md z-10`}
                 aria-label="Previous slide"
               >
@@ -145,7 +144,7 @@ export default function SuccessCasesCarousel({ intervalTime = 5000, dictionary }
               <button
                 onClick={() => instanceRef.current?.next()}
                 className={`absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center ${
-                  isDark ? "bg-zinc-800 text-white" : "bg-white text-gray-900"
+                  isDark ? "bg-black text-white" : "bg-white text-gray-900"
                 } shadow-md z-10`}
                 aria-label="Next slide"
               >
