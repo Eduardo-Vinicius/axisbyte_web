@@ -1,13 +1,13 @@
 {
     "metadata": {
-        "title": "Home Page",
-        "description": "Welcome to our home page"
+        "title": "AxisByte",
+        "description": "We turn tech into time!"
     },
     "common": {
-        "companyName": "Company"
+        "companyName": "AxisByte"
     },
     "hero": {
-        "title": "We transform ideas into digital solutions!",
+        "title": "We turn tech into time!",
         "subtitle": "Development of websites, systems, and apps that boost businesses and optimize results.",
         "primaryCtaText": "Request your quote now",
         "secondaryCtaText": "Learn about our services",
@@ -135,7 +135,7 @@
     "aboutUs": {
         "title": "About Us",
         "description": "Axisbyte Forge Co. is a company specializing in creating intelligent and scalable digital solutions. We develop custom websites, apps, and systems, always focusing on performance, agility, and innovation. Our goal is to transform technology into time, allowing our clients to grow with more freedom.",
-        "image": "/team.png"
+        "image": "/axislogo.png"
     },
     "partnersCarousel": {
         "title": "Our Partners",
@@ -183,16 +183,6 @@
         "builtBy": "Feito por Axisbyte",
         "builtByLink": "https://www.axisbyte.com",
         "socialLinks": [
-            {
-                "name": "Twitter",
-                "href": "https://twitter.com/axisbyte",
-                "icon": "TwitterLogoIcon"
-            },
-            {
-                "name": "LinkedIn",
-                "href": "https://linkedin.com/company/axisbyte",
-                "icon": "LinkedInLogoIcon"
-            },
             {
                 "name": "Instagram",
                 "href": "https://instagram.com/axisbyte",

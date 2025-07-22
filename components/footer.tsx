@@ -15,8 +15,6 @@ export function Footer(props: {
   builtBy: string;
   builtByLink: string;
   instagramLink: string;
-  twitterLink: string;
-  linkedinLink: string;
 }) {
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -49,8 +47,6 @@ export function Footer(props: {
         <div className="flex items-center space-x-1">
           {(
             [
-              { href: props.twitterLink, icon: TwitterLogoIcon },
-              { href: props.linkedinLink, icon: LinkedInLogoIcon },
               { href: props.instagramLink, icon: InstagramLogoIcon },
             ] as const
           ).map((link, index) => (

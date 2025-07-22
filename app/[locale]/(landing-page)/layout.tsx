@@ -26,8 +26,6 @@ export default async function Layout({
         builtBy="Axisbyte Forge Co"
         builtByLink="https://github.com/Axisbyte/"
         instagramLink="https://github.com/Axisbyte/"
-        twitterLink="https://github.com/Axisbyte/"
-        linkedinLink="https://github.com/Axisbyte/"
       />
     </div>
   );

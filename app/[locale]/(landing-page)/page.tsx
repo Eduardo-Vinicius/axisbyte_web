@@ -22,27 +22,27 @@ export default async function IndexPage({
   return (
     <div className="overflow-y-visible">
       <Hero
-        primaryCtaLink="https://forms.gle/6DT6awF1XbrdDjxRA"
-        secondaryCtaLink="/#conheca"
+        primaryCtaLink="https://wa.me/5511917330975?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!"
+        secondaryCtaLink="https://www.instagram.com/p/DKiSko3SaRv/?img_index=1"
         mediaType="image"
-        mediaSrc="/Kanban.png"
+        mediaSrc="/axislogo.png"
         dictionary={dict.hero}
       />
 
       <div id="Benefits"/>
       <Benefits dictionary={dict.benefits}/>
+
+      <div id="HowItWorks"/>
+      <HowItWorks dictionary={dict.howItWorks}/>
       
       <div id="ServicesHighlights"/>
       <ServicesHighlights dictionary={dict.servicesHighlights}/>
 
-      <div id="HowItWorks"/>
-      <HowItWorks dictionary={dict.howItWorks}/>
-
       <div id="SuccessCasesCarousel"/>
       <SuccessCasesCarousel intervalTime={5000} dictionary={dict.successCases}/>
 
-      <div id="Testimonials"/>
-      <Testimonials intervalTime={5000} dictionary={dict.testimonials}/>
+      {/* <div id="Testimonials"/>
+      <Testimonials intervalTime={5000} dictionary={dict.testimonials}/> */}
 
       <div id="AboutUs"/>
       <AboutUs dictionary={dict.aboutUs}/>
@@ -50,8 +50,8 @@ export default async function IndexPage({
       {/* <div id="Partners"/>
       <PartnersCarousel intervalTime={5000} dictionary={dict.partnersCarousel}/> */}
 
-      <div id="faq" />
-      <FAQ dictionary={dict.faq}/>
+      {/* <div id="faq" />
+      <FAQ dictionary={dict.faq}/> */}
     </div>
   );
 }

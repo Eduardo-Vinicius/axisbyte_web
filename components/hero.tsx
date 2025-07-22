@@ -66,7 +66,7 @@ export function Hero(props: {
             <video
               src={props.mediaSrc}
               controls
-              className={`rounded-2xl shadow-lg ${theme === 'dark' ? 'border-2 border-gray-800' : ''}`}
+              className={`rounded-2xl shadow-lg ${theme === 'dark' ? ' border-gray-800' : ''}`}
             >
               {props.dictionary.noSupporthtml}
             </video>
@@ -74,7 +74,7 @@ export function Hero(props: {
             <img
               src={props.mediaSrc}
               alt="Demonstração da criação de projetos Axisbyte"
-              className={`rounded-2xl shadow-lg ${theme === 'dark' ? 'border-2 border-gray-800' : ''}`}
+              className={`rounded-2xl shadow-lg ${theme === 'dark' ? ' border-gray-800' : ''}`}
             />
           )}
         </div>

@@ -1,14 +1,14 @@
 {
     "metadata": {
-        "title": "Página Inicial",
-        "description": "Bem-vindo à nossa página inicial"
+        "title": "AxisByte",
+        "description": "Transformamos tecnologia em tempo!"
     },
     "common": {
-        "companyName": "Empresa"
+        "companyName": "AxisByte"
     },
     "hero": {
-        "title": "Transformamos ideias em soluções digitais!",
-        "subtitle": "Desenvolvimento de sites, sistemas e aplicativos que aceleram negócios e otimizam resultados.",
+        "title": "Transformamos tecnologia em tempo!",
+        "subtitle": "Criação de Apps, sites e automações sob medida.",
         "primaryCtaText": "Peça seu orçamento agora",
         "secondaryCtaText": "Conheça nossos serviços",
         "noSupporthtml": "Seu navegador não suporta vídeos HTML5."
@@ -44,19 +44,19 @@
         "items": [
             {
                 "image": "/images/success-cases/empresa-x.jpg",
-                "title": "Transformação Digital da Empresa X",
+                "title": "RW Performance",
                 "description": "A Empresa X implementou nossa solução e teve um aumento de 30% na produtividade com a automação de processos.",
                 "link": "/casos-de-sucesso/empresa-x"
             },
             {
                 "image": "/images/success-cases/startup-y.jpg",
-                "title": "Otimização de Processos na Startup Y",
+                "title": "Ficael",
                 "description": "Com a nossa plataforma, a Startup Y conseguiu reduzir o tempo de resposta ao cliente em 50%.",
                 "link": "/casos-de-sucesso/startup-y"
             },
             {
                 "image": "/images/success-cases/tech-solutions.jpg",
-                "title": "Aumento de Eficiência na Tech Solutions",
+                "title": "Psicologo Marcelo Martins",
                 "description": "A Tech Solutions melhorou a colaboração entre equipes com a nossa ferramenta de gestão de projetos, resultando em um aumento de 20% na eficiência.",
                 "link": "/casos-de-sucesso/tech-solutions"
             }
@@ -93,17 +93,17 @@
         "title": "Destaques dos Nossos Serviços",
         "services": [
             {
-                "title": "Desenvolvimento de Sites Responsivos",
+                "title": "Sites rápidos e responsivos",
                 "description": "Criamos sites modernos, rápidos e otimizados para qualquer dispositivo, com foco em experiência do usuário e performance.",
                 "image": "/images/web-development.jpeg"
             },
             {
-                "title": "Criação de Aplicativos Mobile (Flutter)",
+                "title": "Aplicativos mobile (Android e iOS)",
                 "description": "Desenvolvemos apps móveis de alta performance com Flutter, garantindo uma experiência consistente em Android e iOS.",
                 "image": "/images/mobile-development.jpg"
             },
             {
-                "title": "Soluções sob Medida (Sistemas e APIs)",
+                "title": "Sistemas web inteligentes",
                 "description": "Construímos soluções personalizadas, desde sistemas completos até APIs, para atender necessidades específicas do seu negócio.",
                 "image": "/images/custom-solutions.jpg"
             }
@@ -112,7 +112,7 @@
     "aboutUs": {
         "title": "Quem Somos",
         "description": "Axisbyte Forge Co. é uma empresa especializada na criação de soluções digitais inteligentes e escaláveis. Desenvolvemos sites, aplicativos e sistemas personalizados, sempre focados em performance, agilidade e inovação. Nosso objetivo é transformar tecnologia em tempo para nossos clientes crescerem com mais liberdade.",
-        "image": "/team.png"
+        "image": "/axislogo.png"
     },
     "testimonials": {
         "title": "O que nossos clientes dizem",
@@ -184,18 +184,8 @@
         "builtByLink": "https://www.axisbyte.com",
         "socialLinks": [
             {
-                "name": "Twitter",
-                "href": "https://twitter.com/axisbyte",
-                "icon": "TwitterLogoIcon"
-            },
-            {
-                "name": "LinkedIn",
-                "href": "https://linkedin.com/company/axisbyte",
-                "icon": "LinkedInLogoIcon"
-            },
-            {
                 "name": "Instagram",
-                "href": "https://instagram.com/axisbyte",
+                "href": "https://www.instagram.com/axisbyte.co",
                 "icon": "InstagramLogoIcon"
             }
         ]
