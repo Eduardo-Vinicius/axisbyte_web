@@ -43,25 +43,25 @@
         "title": "Success cases",
         "items": [
             {
-                "image": "/images/success-cases/empresa-x.jpg",
-                "title": "Digital Transformation of Company X",
+                "image": "/images/success-cases/rxperformance.jpg",
+                "title": "RW Performance",
                 "description": "Company X implemented our solution and saw a 30% increase in productivity with process automation.",
-                "link": "/casos-de-sucesso/empresa-x"
+                "link": "https://www.rwperformance.com.br"
             },
             {
-                "image": "/images/success-cases/startup-y.jpg",
-                "title": "Process Optimization at Startup Y",
+                "image": "/images/success-cases/Ficael.jpg",
+                "title": "Ficael",
                 "description": "With our platform, Startup Y reduced customer response time by 50%.",
-                "link": "/casos-de-sucesso/startup-y"
+                "link": "https://ficael.com"
             },
             {
-                "image": "/images/success-cases/tech-solutions.jpg",
-                "title": "Efficiency Boost at Tech Solutions",
+                "image": "/images/success-cases/psicologo.png",
+                "title": "Psicologo Marcelo Martins",
                 "description": "Tech Solutions improved team collaboration with our project management tool, resulting in a 20% increase in efficiency.",
-                "link": "/casos-de-sucesso/tech-solutions"
+                "link": "https://www.psicologomarcelomartins.com.br"
             }
         ],
-        "knowMore": "Learn more"
+        "knowMore": "Visit"
     },
     "howItWorks": {
         "title": "How does it work?",

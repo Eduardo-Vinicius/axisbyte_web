@@ -43,25 +43,25 @@
         "title": "Cases de sucesso",
         "items": [
             {
-                "image": "/images/success-cases/empresa-x.jpg",
+                "image": "/images/success-cases/rxperformance.jpg",
                 "title": "RW Performance",
                 "description": "A Empresa X implementou nossa solução e teve um aumento de 30% na produtividade com a automação de processos.",
-                "link": "/casos-de-sucesso/empresa-x"
+                "link": "https://www.rwperformance.com.br"
             },
             {
-                "image": "/images/success-cases/startup-y.jpg",
+                "image": "/images/success-cases/Ficael.jpg",
                 "title": "Ficael",
                 "description": "Com a nossa plataforma, a Startup Y conseguiu reduzir o tempo de resposta ao cliente em 50%.",
-                "link": "/casos-de-sucesso/startup-y"
+                "link": "https://ficael.com"
             },
             {
-                "image": "/images/success-cases/tech-solutions.jpg",
+                "image": "/images/success-cases/psicologo.png",
                 "title": "Psicologo Marcelo Martins",
                 "description": "A Tech Solutions melhorou a colaboração entre equipes com a nossa ferramenta de gestão de projetos, resultando em um aumento de 20% na eficiência.",
-                "link": "/casos-de-sucesso/tech-solutions"
+                "link": "https://www.psicologomarcelomartins.com.br"
             }
         ],
-        "knowMore": "Saiba mais"
+        "knowMore": "Visitar site"
     },
     "howItWorks": {
         "title": "Como Funciona?",
