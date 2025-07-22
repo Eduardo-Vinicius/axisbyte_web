@@ -45,22 +45,22 @@
             {
                 "image": "/images/success-cases/rxperformance.jpg",
                 "title": "RW Performance",
-                "description": "Company X implemented our solution and saw a 30% increase in productivity with process automation.",
+                "description": "Development of a modern and optimized institutional website for RW Performance, focused on performance, responsiveness, and a strong professional online presence.",
                 "link": "https://www.rwperformance.com.br"
             },
             {
                 "image": "/images/success-cases/Ficael.jpg",
                 "title": "Ficael",
-                "description": "With our platform, Startup Y reduced customer response time by 50%.",
+                "description": "Creation of Ficael's official landing page, with a lightweight design, strategic communication, and lead generation.",
                 "link": "https://ficael.com"
             },
             {
                 "image": "/images/success-cases/psicologo.png",
-                "title": "Psicologo Marcelo Martins",
-                "description": "Tech Solutions improved team collaboration with our project management tool, resulting in a 20% increase in efficiency.",
+                "title": "Psychologist Marcelo Martins",
+                "description": "Custom website built for psychologist Marcelo Martins, focused on appointment scheduling, service presentation, and strengthening professional credibility.",
                 "link": "https://www.psicologomarcelomartins.com.br"
             }
-        ],
+            ],
         "knowMore": "Visit"
     },
     "howItWorks": {
