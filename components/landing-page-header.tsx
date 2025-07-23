@@ -79,9 +79,9 @@ function MobileItems(props: NavProps) {
               {item.title}
             </Link>
           ))}
-          <div className="flex flex-col gap-2 mt-4">
+          {/* <div className="flex flex-col gap-2 mt-4">
             <AuthButtons />
-          </div>
+          </div> */}
         </nav>
       </div>
     </div>
