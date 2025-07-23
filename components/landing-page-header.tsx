@@ -126,7 +126,7 @@ export function LandingPageHeader(props: NavProps) {
           <Logo className="hidden md:flex" />
           {props.items?.length ? <DesktopItems items={props.items} /> : null}
 
-          <Button
+          {/* <Button
             className="space-x-2 md:hidden"
             variant="ghost"
             size="icon"
@@ -137,7 +137,7 @@ export function LandingPageHeader(props: NavProps) {
             ) : (
               <Menu className="h-6 w-6" />
             )}
-          </Button>
+          </Button> */}
 
           <Logo className="md:hidden" />
 
