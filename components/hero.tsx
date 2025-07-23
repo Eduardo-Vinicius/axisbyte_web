@@ -16,7 +16,6 @@ export function Hero(props: {
     title: string;
     subtitle: string;
     primaryCtaText: string;
-    secondaryCtaText: string;
     noSupporthtml: string;
   };
 }) {
@@ -51,7 +50,7 @@ export function Hero(props: {
               {props.dictionary.primaryCtaText}
             </Link>
 
-            <Link
+            {/* <Link
               href={props.secondaryCtaLink}
               target="_blank"
               rel="noreferrer"
@@ -63,7 +62,7 @@ export function Hero(props: {
               )}
             >
               {props.dictionary.secondaryCtaText}
-            </Link>
+            </Link> */}
           </div>
         </div>
 
