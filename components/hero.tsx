@@ -27,8 +27,6 @@ export function Hero(props: {
     setMounted(true)
   }, [])
 
-  if (!mounted) return null
-
   const isDark = theme === 'dark'
   const mediaToShow = isDark ? props.mediaSrc : props.mediaSrcLight || props.mediaSrc
 
@@ -45,26 +43,31 @@ export function Hero(props: {
             {props.dictionary.subtitle}
           </p>
 
-          <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            <Link
-              href={props.primaryCtaLink}
-              className={cn(buttonVariants({ size: "lg" }))}
-            >
-              {props.dictionary.primaryCtaText}
-            </Link>
+          {/* Botões com renderização condicional após montagem */}
+          {mounted && (
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+              <Link
+                href={props.primaryCtaLink}
+                className={cn(buttonVariants({ size: "lg" }))}
+              >
+                {props.dictionary.primaryCtaText}
+              </Link>
 
-            <Link
-              href={props.secondaryCtaLink}
-              target="_blank"
-              rel="noreferrer"
-              className={cn(
-                buttonVariants({ variant: "outline", size: "lg" }),
-                isDark ? "border-gray-700 text-gray-200 hover:bg-gray-800" : "border-gray-300 text-gray-900 hover:bg-gray-100"
-              )}
-            >
-              {props.dictionary.secondaryCtaText}
-            </Link>
-          </div>
+              <Link
+                href={props.secondaryCtaLink}
+                target="_blank"
+                rel="noreferrer"
+                className={cn(
+                  buttonVariants({ variant: "outline", size: "lg" }),
+                  isDark
+                    ? "border-gray-700 text-gray-200 hover:bg-gray-800"
+                    : "border-gray-300 text-gray-900 hover:bg-gray-100"
+                )}
+              >
+                {props.dictionary.secondaryCtaText}
+              </Link>
+            </div>
+          )}
         </div>
 
         {/* Mídia */}

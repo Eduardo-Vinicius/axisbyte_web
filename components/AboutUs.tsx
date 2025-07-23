@@ -28,7 +28,7 @@ export default function AboutUs({ dictionary }: AboutUsProps) {
   return (
     <section className={`py-24 ${isDark ? 'bg-black text-white' : 'bg-slate-50 text-gray-900'}`}>
       <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
-        
+
         {/* Texto */}
         <div className="md:w-1/2 space-y-6 text-center md:text-left">
           <h2 className="text-4xl font-bold tracking-tight">
@@ -44,7 +44,7 @@ export default function AboutUs({ dictionary }: AboutUsProps) {
           <img
             src={imageToShow}
             alt="Equipe Axisbyte"
-            className="w-full h-auto rounded-xl object-cover shadow-2xl border border-gray-200 dark:border-gray-800"
+            className="w-full h-auto rounded-xl object-cover shadow-xl border border-gray-200 dark:border-gray-800"
           />
         </div>
       </div>

@@ -54,7 +54,7 @@ export default function ServicesHighlights({ dictionary }: ServicesHighlightsPro
                 <h3 className="text-xl font-semibold">
                   {service.title}
                 </h3>
-                <p className="text-base text-gray-400 dark:text-gray-300">
+                <p className={`text-base ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                   {service.description}
                 </p>
               </div>

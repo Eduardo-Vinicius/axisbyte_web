@@ -97,7 +97,7 @@ export default function SuccessCasesCarousel({ intervalTime = 5000, dictionary }
                   }}
                 >
                   <div
-                    className={`flex flex-col h-full justify-between rounded-2xl shadow-xl border ${
+                    className={`flex flex-col h-full justify-between rounded-2xl shadow-lg border ${
                       isDark ? "bg-black border-zinc-800" : "bg-white border-gray-200"
                     } hover:scale-[1.01] transition-transform duration-300`}
                     style={{ minHeight: 420 }}
@@ -109,7 +109,7 @@ export default function SuccessCasesCarousel({ intervalTime = 5000, dictionary }
                     />
                     <div className="flex flex-col justify-between p-6 flex-grow space-y-4">
                       <h3 className="text-2xl font-semibold">{successCase.title}</h3>
-                      <p className="text-base leading-relaxed text-gray-500 dark:text-gray-300 flex-grow">
+                      <p className={`text-base leading-relaxed ${isDark ? "text-gray-300" : "text-gray-600"} flex-grow`}>
                         {successCase.description}
                       </p>
                       <a
@@ -134,18 +134,18 @@ export default function SuccessCasesCarousel({ intervalTime = 5000, dictionary }
             <>
               <button
                 onClick={() => instanceRef.current?.prev()}
-                className={`absolute -left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center ${
+                className={`absolute -left-8 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center ${
                   isDark ? "bg-black text-white" : "bg-white text-gray-900"
-                } shadow-md z-10`}
+                } shadow-md z-10 transition hover:scale-105`}
                 aria-label="Previous slide"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <button
                 onClick={() => instanceRef.current?.next()}
-                className={`absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center ${
+                className={`absolute -right-8 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center ${
                   isDark ? "bg-black text-white" : "bg-white text-gray-900"
-                } shadow-md z-10`}
+                } shadow-md z-10 transition hover:scale-105`}
                 aria-label="Next slide"
               >
                 <ChevronRight className="w-5 h-5" />
@@ -161,12 +161,13 @@ export default function SuccessCasesCarousel({ intervalTime = 5000, dictionary }
               <button
                 key={idx}
                 onClick={() => instanceRef.current?.moveToIdx(idx)}
+                aria-label={`Go to slide ${idx + 1}`}
+                aria-current={currentSlide === idx ? "true" : undefined}
                 className={`h-2 rounded-full transition-all duration-300 ${
                   currentSlide === idx
                     ? `w-8 ${isDark ? "bg-indigo-400" : "bg-indigo-600"}`
                     : `w-2 ${isDark ? "bg-gray-700" : "bg-gray-300"}`
                 }`}
-                aria-label={`Go to slide ${idx + 1}`}
               />
             ))}
           </div>

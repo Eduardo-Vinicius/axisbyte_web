@@ -38,7 +38,7 @@ export default function HowItWorks({ dictionary }: HowItWorksProps) {
   return (
     <section className={`py-24 px-6 ${isDark ? 'bg-zinc-900 text-white' : 'bg-white text-gray-900'}`}>
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4 tracking-tight">
+        <h2 className="text-4xl font-bold tracking-tight mb-4">
           {dictionary.title}
         </h2>
         <p className={`text-lg mb-14 max-w-2xl mx-auto ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
@@ -49,7 +49,7 @@ export default function HowItWorks({ dictionary }: HowItWorksProps) {
           {dictionary.steps.map((step, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center p-6 rounded-2xl border transition-all duration-300 hover:shadow-lg ${
+              className={`flex flex-col items-center p-6 rounded-2xl border transition-all duration-300 hover:shadow-xl ${
                 isDark
                   ? 'bg-black border-zinc-800 hover:border-sky-500'
                   : 'bg-slate-50 border-gray-200 hover:border-blue-600'
@@ -58,7 +58,9 @@ export default function HowItWorks({ dictionary }: HowItWorksProps) {
               <div className="flex items-center justify-center mb-5 w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-indigo-500 shadow-md">
                 {iconMap[step.icon]}
               </div>
-              <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+              <h3 className="text-xl font-semibold mb-2 text-center">
+                {step.title}
+              </h3>
               <p className="text-sm text-center text-gray-500 dark:text-gray-400">
                 {step.description}
               </p>
